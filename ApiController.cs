@@ -16,6 +16,15 @@ public class ApiController : ODataController
         this.mapper = mapper;
     }
 
+    // This works
+    // [EnableQuery]
+    // [HttpGet("categories")]
+    // public async Task<IQueryable<CategoryModel>> GetODataCategories()
+    // {
+    //     return this.mapper.ProjectTo<CategoryModel>(Data.Categories);
+    // }
+
+    // This does not works
     [HttpGet("categories")]
     public async Task<IQueryable<CategoryModel>> GetODataCategories(ODataQueryOptions<CategoryModel> options)
     {
