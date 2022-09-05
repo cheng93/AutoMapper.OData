@@ -25,6 +25,7 @@ static class ODataConventionModelBuilderExtensions
 {
     public static IEdmModel GetCustomEdmModel(this ODataConventionModelBuilder odataBuilder)
     {
+        odataBuilder.Namespace = "FooBar"; // Removing this fixes the issue
         odataBuilder.EntitySet<CategoryModel>("categories");
 
         return odataBuilder.GetEdmModel();
