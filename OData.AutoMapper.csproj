@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="AutoMapper.AspNetCore.OData.EFCore" Version="3.0.4" />
+      <PackageReference Include="AutoMapper.AspNetCore.OData.EFCore" Version="3.0.5" />
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     </ItemGroup>
 
